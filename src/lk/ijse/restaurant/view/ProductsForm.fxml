@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="productAP" prefHeight="1000.0" prefWidth="1620.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.ProductsFormController">
+   <children>
+      <Separator layoutX="14.0" layoutY="43.0" prefHeight="50.0" prefWidth="1620.0" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <FontAwesomeIconView glyphName="HOME" layoutX="14.0" layoutY="41.0" size="30" />
+      <Label layoutX="46.0" layoutY="19.0" text="Home">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="24.0" fitWidth="28.0" layoutX="98.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/navigate_next_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="124.0" layoutY="19.0" text="Products">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="588.0" layoutY="72.0" prefHeight="35.0" prefWidth="237.0" text="Manage Products" textFill="#0652dd" AnchorPane.leftAnchor="695.0" AnchorPane.rightAnchor="695.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font name="Cambria" size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblProduct" layoutX="210.0" layoutY="145.0" prefHeight="600.0" prefWidth="1250.0" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="184.5999999999999" AnchorPane.topAnchor="145.0">
+         <columns>
+            <TableColumn fx:id="colItemId" minWidth="20.0" prefWidth="250.0" text="Item ID" />
+            <TableColumn fx:id="colName" minWidth="20.0" prefWidth="250.0" text="Item Name" />
+            <TableColumn fx:id="colCategory" minWidth="20.0" prefWidth="250.0" text="Category" />
+            <TableColumn fx:id="colPrice" minWidth="20.0" prefWidth="250.0" text="Price" />
+            <TableColumn fx:id="colQty" minWidth="20.0" prefWidth="250.0" text="Quantity" />
+         </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="1346.0" layoutY="701.0" onAction="#addProductOnAction" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #00B4DB;" styleClass="button1" stylesheets="@../style.css" text="Add New Product" textFill="WHITE" AnchorPane.bottomAnchor="160.0">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1346.0" layoutY="772.0" onAction="#deleteProductOnAction" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #dd1818;" styleClass="button2" stylesheets="@../style.css" text="Delete Product" textFill="WHITE" AnchorPane.bottomAnchor="100.0">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1346.0" layoutY="885.0" onAction="#editProductOnAction" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #38ef7d;" styleClass="button3" stylesheets="@../style.css" text="Edit Product" textFill="WHITE" AnchorPane.bottomAnchor="40.0">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="210.0" layoutY="806.0" text="Total Products  :">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalProducts" layoutX="388.0" layoutY="805.0" text="50">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

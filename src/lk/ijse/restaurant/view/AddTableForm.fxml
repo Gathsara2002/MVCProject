@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="newTableAP" prefHeight="1000.0" prefWidth="1620.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.AddTableFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="800.0" layoutX="150.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" width="1320.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="105.0" />
+      <Label layoutX="713.0" layoutY="108.0" text="Add New Table">
+         <font>
+            <Font name="Cambria Bold" size="28.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="210.0" layoutY="865.0" onAction="#addTableOnAction" style="-fx-background-color: #0abde3;" text="Add " textFill="WHITE" AnchorPane.bottomAnchor="150.0" AnchorPane.rightAnchor="200.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="144.0" layoutY="890.0" onAction="#cancelOnAction" style="-fx-background-color: #dd1818;" text="Cancel" textFill="WHITE" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="200.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="300.0" layoutY="205.0" text="Table ID  :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="205.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="280.0" text="Capacity  :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="280.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="355.0" text="Description  :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="355.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="430.0" text="Booking Date  :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="430.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="505.0" text="Booking Time  :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="505.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="580.0" text="Availability  :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="580.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="655.0" text="Customer ID  :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="655.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTid" layoutX="520.0" layoutY="192.0" prefHeight="30.0" prefWidth="800.0" AnchorPane.rightAnchor="300.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCapacity" layoutX="520.0" layoutY="267.0" prefHeight="30.0" prefWidth="800.0" AnchorPane.rightAnchor="300.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDesc" layoutX="472.0" layoutY="344.0" prefHeight="30.0" prefWidth="800.0" AnchorPane.rightAnchor="300.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCid" layoutX="498.0" layoutY="644.0" prefHeight="30.0" prefWidth="800.0" AnchorPane.rightAnchor="300.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAvailability" layoutX="520.0" layoutY="569.0" prefHeight="30.0" prefWidth="800.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="569.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXTextField>
+      <DatePicker fx:id="datePicker" layoutX="513.0" layoutY="430.0" prefHeight="30.0" prefWidth="250.0" />
+      <JFXTextField fx:id="txtTime" layoutX="507.0" layoutY="499.0" prefHeight="30.0" prefWidth="800.0" AnchorPane.rightAnchor="300.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

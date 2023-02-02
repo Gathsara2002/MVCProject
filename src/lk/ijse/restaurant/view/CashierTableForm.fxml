@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CaTableAP" prefHeight="1000.0" prefWidth="1620.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.CashierTableFormController">
+   <children>
+      <Separator layoutY="-2.0" prefHeight="50.0" prefWidth="1300.0" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <FontAwesomeIconView glyphName="HOME" layoutX="12.0" layoutY="40.0" size="30" />
+      <Label layoutX="44.0" layoutY="18.0" text="Home">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="24.0" fitWidth="28.0" layoutX="96.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/navigate_next_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="122.0" layoutY="18.0" text="Tables">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="1336.0" layoutY="691.0" onAction="#reserveTableOnAction" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #00B4DB;" styleClass="button1" stylesheets="@../style.css" text="Reserve Table" textFill="WHITE" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="40.0">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="578.0" layoutY="62.0" prefHeight="35.0" prefWidth="185.0" text="Manage Tables" textFill="#0652dd" AnchorPane.leftAnchor="718.0" AnchorPane.rightAnchor="716.4" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font name="Cambria" size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblTable" layoutX="110.0" layoutY="171.0" prefHeight="500.0" prefWidth="1400.0" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="171.0">
+         <columns>
+            <TableColumn fx:id="colTid" minWidth="20.0" prefWidth="200.0" text="Table ID" />
+            <TableColumn fx:id="colCapacity" minWidth="20.0" prefWidth="200.0" text="Capacity" />
+            <TableColumn fx:id="colDesc" minWidth="20.0" prefWidth="200.0" text="Description" />
+            <TableColumn fx:id="colDate" minWidth="20.0" prefWidth="200.0" text="Booking Date" />
+            <TableColumn fx:id="colTime" minWidth="20.0" prefWidth="200.0" text="Booking Time" />
+            <TableColumn fx:id="colAvailability" minWidth="20.0" prefWidth="200.0" text="Availability" />
+            <TableColumn fx:id="colCid" minWidth="20.0" prefWidth="200.0" text="Customer ID" />
+         </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <Label layoutX="110.0" layoutY="792.0" text="Total Tables  :" AnchorPane.leftAnchor="210.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalTables" layoutX="343.0" layoutY="789.0" text="50">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="139.0" text="Table Info" underline="true" AnchorPane.leftAnchor="210.0">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="694.0" style="-fx-background-color: #c7ecee; -fx-border-color: red;" text="Booking Date &amp; Time only requires for tables that book earlier.">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="WARNING" size="16" />
+         </graphic>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="1346.0" layoutY="701.0" onAction="#changeOnAction" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #38ef7d;" styleClass="button3" stylesheets="@../style.css" text="Change Reservation" textFill="WHITE" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="40.0">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

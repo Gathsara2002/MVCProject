@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="supplierAP" prefHeight="1000.0" prefWidth="1620.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.SupplierFormController">
+   <children>
+      <Separator layoutY="-2.0" prefHeight="50.0" prefWidth="1620.0" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <FontAwesomeIconView glyphName="HOME" layoutX="12.0" layoutY="40.0" size="30" />
+      <Label layoutX="44.0" layoutY="18.0" text="Home">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="24.0" fitWidth="28.0" layoutX="96.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/navigate_next_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="122.0" layoutY="18.0" text="Suppliers">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="1336.0" layoutY="691.0" onAction="#addSupplierOnAction" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #00B4DB;" styleClass="button1" stylesheets="@../style.css" text="Add New Supplier" textFill="WHITE" AnchorPane.bottomAnchor="160.0" AnchorPane.rightAnchor="40.0">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1336.0" layoutY="762.0" onAction="#deleteSupplierOnAction" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #dd1818;" styleClass="button2" stylesheets="@../style.css" text="Delete Supplier" textFill="WHITE" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="40.0">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1336.0" layoutY="875.0" onAction="#editSupplierOnAction" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #38ef7d;" styleClass="button3" stylesheets="@../style.css" text="Edit Supplier" textFill="WHITE" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="40.0">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="578.0" layoutY="62.0" prefHeight="35.0" text="Manage Suppliers" textFill="#0652dd" AnchorPane.leftAnchor="700.0" AnchorPane.rightAnchor="700.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font name="Cambria" size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblSuppliers" layoutX="110.0" layoutY="171.0" prefHeight="600.0" prefWidth="1400.0" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="171.0">
+         <columns>
+            <TableColumn fx:id="colSupId" minWidth="20.0" prefWidth="200.0" text="Supplier ID" />
+            <TableColumn fx:id="colSupName" minWidth="20.0" prefWidth="200.0" text="Supllier Name" />
+            <TableColumn fx:id="colContact" minWidth="20.0" prefWidth="200.0" text="Contact" />
+            <TableColumn fx:id="colEmail" minWidth="20.0" prefWidth="200.0" text="Email (Optional)" />
+            <TableColumn fx:id="colCompany" minWidth="20.0" prefWidth="200.0" text="Company" />
+            <TableColumn fx:id="coNoOfItems" minWidth="20.0" prefWidth="200.0" text="No Of Items" />
+            <TableColumn fx:id="colPayments" minWidth="20.0" prefWidth="200.0" text="Payment" />
+         </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <Label layoutX="110.0" layoutY="792.0" text="Total Suppliers  :" AnchorPane.leftAnchor="110.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalSuppliers" layoutX="265.0" layoutY="791.0" text="10">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="139.0" text="Suppliers Info" underline="true" AnchorPane.leftAnchor="110.0">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

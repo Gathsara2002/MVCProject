@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="updateStockAP" prefHeight="1000.0" prefWidth="1620.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.UpdateStockFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="800.0" layoutX="364.0" layoutY="205.0" stroke="BLACK" strokeType="INSIDE" width="1320.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="100.0" />
+      <Label layoutX="662.0" layoutY="108.0" text="Update Item from Stcok">
+         <font>
+            <Font name="Cambria Bold" size="28.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="210.0" layoutY="865.0" onAction="#updateOnAction" style="-fx-background-color: #0abde3;" text="Update" textFill="WHITE" AnchorPane.bottomAnchor="150.0" AnchorPane.rightAnchor="200.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="144.0" layoutY="890.0" onAction="#cancelOnAction" style="-fx-background-color: #dd1818;" text="Cancel" textFill="WHITE" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="200.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="300.0" layoutY="200.0" text="Stock ID  :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="200.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="275.0" text="Item Name  :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="275.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="350.0" text="Category  :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="350.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="425.0" text="Qty OnHand  :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="425.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="500.0" text="Unit Price  :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="500.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="575.0" text="Status  :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="575.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="650.0" text="Employee ID  :" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="650.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" layoutX="472.0" layoutY="269.0" prefHeight="30.0" prefWidth="800.0" AnchorPane.rightAnchor="300.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCategory" layoutX="472.0" layoutY="344.0" prefHeight="30.0" prefWidth="800.0" AnchorPane.rightAnchor="300.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtQty" layoutX="447.0" layoutY="418.0" prefHeight="30.0" prefWidth="800.0" AnchorPane.rightAnchor="300.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPrice" layoutX="490.0" layoutY="494.0" prefHeight="30.0" prefWidth="800.0" AnchorPane.rightAnchor="300.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtStatus" layoutX="472.0" layoutY="568.0" prefHeight="30.0" prefWidth="800.0" AnchorPane.rightAnchor="300.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmpId" layoutX="498.0" layoutY="644.0" prefHeight="30.0" prefWidth="800.0" AnchorPane.rightAnchor="300.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbSid" layoutX="520.0" layoutY="197.0" onAction="#cmbSidOnAction" prefHeight="30.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

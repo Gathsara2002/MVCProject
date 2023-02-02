@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cashierProfileAP" prefHeight="1000.0" prefWidth="1620.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.CashierProfileFormController">
+   <children>
+      <Separator layoutY="1.0" prefHeight="50.0" prefWidth="1620.0" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <FontAwesomeIconView glyphName="HOME" layoutX="12.0" layoutY="41.0" size="30" />
+      <Label layoutX="44.0" layoutY="19.0" text="Home">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="24.0" fitWidth="28.0" layoutX="96.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/navigate_next_FILL0_wght400_GRAD0_opsz48.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="122.0" layoutY="19.0" text="Profile">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="700.0" layoutX="193.0" layoutY="102.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.4" width="1400.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="110.0" />
+      <Label layoutX="110.0" layoutY="119.0" text="Profile Info" AnchorPane.leftAnchor="110.0">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="160.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/woman.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="160.0" layoutY="383.0" prefHeight="40.0" prefWidth="350.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="  Username">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="543.0" prefHeight="40.0" prefWidth="350.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="  NIC">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="583.0" prefHeight="40.0" prefWidth="350.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="  Gender">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="463.0" prefHeight="40.0" prefWidth="350.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="  Address">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="423.0" prefHeight="40.0" prefWidth="350.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="  Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="503.0" prefHeight="40.0" prefWidth="350.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="  Contact">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="623.0" prefHeight="40.0" prefWidth="350.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="  Role">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="663.0" prefHeight="40.0" prefWidth="350.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="  Email">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUsername" layoutX="510.0" layoutY="383.0" prefHeight="40.0" prefWidth="950.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="     ">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAddress" layoutX="510.0" layoutY="463.0" prefHeight="40.0" prefWidth="950.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="     ">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblContact" layoutX="510.0" layoutY="503.0" prefHeight="40.0" prefWidth="950.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="     ">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNic" layoutX="510.0" layoutY="543.0" prefHeight="40.0" prefWidth="950.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="     ">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGender" layoutX="510.0" layoutY="583.0" prefHeight="40.0" prefWidth="950.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="     ">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRole" layoutX="510.0" layoutY="623.0" prefHeight="40.0" prefWidth="950.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="     ">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEmail" layoutX="510.0" layoutY="663.0" prefHeight="40.0" prefWidth="950.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="     ">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" layoutX="510.0" layoutY="423.0" prefHeight="40.0" prefWidth="950.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="     ">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="703.0" prefHeight="40.0" prefWidth="350.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="  Password">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pwPassword" layoutX="510.0" layoutY="703.0" prefHeight="40.0" prefWidth="950.0" style="-fx-border-color: black; -fx-border-radius: 0; -fx-border-width: 0.3;" />
+      <JFXCheckBox fx:id="cbShowPassword" checkedColor="#2d3436" layoutX="510.0" layoutY="761.0" onAction="#showPasswordOnAction" text="Show Password" unCheckedColor="BLACK">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </JFXCheckBox>
+      <Label fx:id="lblShowPassword" layoutX="510.0" layoutY="703.0" prefHeight="40.0" prefWidth="950.0" style="-fx-border-color: black; -fx-border-width: 0.3;" text="     " visible="false">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

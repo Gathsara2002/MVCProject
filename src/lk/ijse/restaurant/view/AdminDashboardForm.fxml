@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminAP" prefHeight="1050.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.AdminDashboardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#333645" height="950.0" layoutY="100.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1620.0" AnchorPane.topAnchor="100.0" />
+      <Label alignment="CENTER" contentDisplay="TOP" layoutY="-14.0" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #00a2d3;" text="Admin" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Cambria Bold" size="30.0" />
+         </font>
+      </Label>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="12.0" layoutY="100.0" onAction="#adDashboardOnAction" prefHeight="60.0" prefWidth="300.0" stylesheets="@../style.css" text="Dashboard" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icons8-dashboard-layout-24.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="15.0" layoutY="150.0" onAction="#adUserOnAction" prefHeight="60.0" prefWidth="300.0" stylesheets="@../style.css" text="Users" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" size="24" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="12.0" layoutY="200.0" onAction="#adStaffOnAction" prefHeight="60.0" prefWidth="300.0" stylesheets="@../style.css" text="Staff" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="220.0">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/conference-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="12.0" layoutY="640.0" onAction="#adProfileOnAction" prefHeight="60.0" prefWidth="300.0" stylesheets="@../style.css" text="Profile" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="580.0">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/change-user-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="12.0" layoutY="249.0" onAction="#adProductOnAction" prefHeight="60.0" prefWidth="300.0" stylesheets="@../style.css" text="Products" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="280.0">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/menu-4-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="12.0" layoutY="400.0" onAction="#adTableOnAction" prefHeight="60.0" prefWidth="300.0" stylesheets="@../style.css" text="Tables" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="400.0">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/table-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="12.0" layoutY="488.0" onAction="#adStockOnAction" prefHeight="60.0" prefWidth="300.0" stylesheets="@../style.css" text="Stock" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="460.0">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icons8-in-inventory-100.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="12.0" layoutY="538.0" onAction="#adSupplierOnAction" prefHeight="60.0" prefWidth="300.0" stylesheets="@../style.css" text="Suppliers" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="520.0">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/checked-user-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="12.0" layoutY="990.0" onAction="#adLogoutOnAction" prefHeight="60.0" prefWidth="300.0" stylesheets="@../style.css" text="Logout" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/account-logout-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Rectangle fill="#2980b9" height="50.0" layoutX="300.0" stroke="#2980b9" strokeType="INSIDE" strokeWidth="0.0" width="1620.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="lblDate" layoutX="418.0" layoutY="12.0" text="2022/10/12" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1826.0" layoutY="12.0" text="16:15:33" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/profile.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="368.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/pngwing.com.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="dashboardAP" focusTraversable="true" layoutX="300.0" layoutY="50.0" prefHeight="1000.0" prefWidth="1620.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Separator layoutX="217.0" prefHeight="50.0" prefWidth="1300.0" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <FontAwesomeIconView glyphName="HOME" layoutX="14.0" layoutY="42.0" size="30" text="" />
+            <Label layoutX="48.0" layoutY="22.0" text="Home">
+               <font>
+                  <Font name="Cambria" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="103.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/navigate_next_FILL0_wght400_GRAD0_opsz48.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="143.0" layoutY="22.0" text="Dasboard">
+               <font>
+                  <Font name="Cambria" size="20.0" />
+               </font>
+            </Label>
+            <Pane accessibleRole="BUTTON" layoutX="47.0" layoutY="100.0" onMouseClicked="#customerOnClick" prefHeight="150.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(to left, #9cecfb, #65c7f7, #0052d4);" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="47.0" text="Total Customers" textFill="WHITE">
+                     <font>
+                        <Font name="Californian FB Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCustomer" layoutX="17.0" layoutY="74.0" text="100" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="79.0" fitWidth="75.0" layoutX="179.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icons8-customer-64.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="216.0" layoutY="127.0" stylesheets="@../style.css" text="More Info  ">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="277.0" layoutY="120.0" text="&gt;">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Pane>
+            <Pane accessibleRole="BUTTON" layoutX="986.0" layoutY="101.0" onMouseClicked="#onEarningClick" prefHeight="150.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(to right, #ff5f6d, #ffc371);;" AnchorPane.leftAnchor="980.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="47.0" text="Net Earnings" textFill="WHITE">
+                     <font>
+                        <Font name="Californian FB Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblEarnings" layoutX="14.0" layoutY="75.0" text="15,000" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="WHITE" glyphName="DOLLAR" layoutX="207.0" layoutY="86.0" onMouseClicked="#earningsOnClick" size="80" />
+                  <Label layoutX="215.0" layoutY="122.0" text="More Info  ">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="277.0" layoutY="115.0" text="&gt;">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Pane>
+            <Pane accessibleRole="BUTTON" layoutX="410.0" layoutY="100.0" onMouseClicked="#tableOnClick" prefHeight="150.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(to right, #20e3b2, #bdfff3);" AnchorPane.leftAnchor="340.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="49.0" text="Available Tables" textFill="WHITE">
+                     <font>
+                        <Font name="Californian FB Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTable" layoutX="15.0" layoutY="72.0" text="50" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="WHITE" glyphName="TABLE" layoutX="187.0" layoutY="86.0" size="75" text="" />
+                  <Label layoutX="222.0" layoutY="127.0" text="More Info  ">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="282.0" layoutY="121.0" text="&gt;">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Pane>
+            <Pane accessibleRole="BUTTON" layoutX="740.0" layoutY="101.0" onMouseClicked="#ordersOnClick" prefHeight="150.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(to left, #fceabb, #f8b500);;" AnchorPane.leftAnchor="660.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="47.0" text="Total Orsers" textFill="WHITE">
+                     <font>
+                        <Font name="Californian FB Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblOrders" layoutX="14.0" layoutY="75.0" text="250" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="86.0" fitWidth="79.0" layoutX="177.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icons8-mobile-order-100.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="216.0" layoutY="127.0" text="More Info  ">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="277.0" layoutY="120.0" text="&gt;">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Pane>
+            <Pane accessibleRole="BUTTON" layoutX="1300.0" layoutY="100.0" onMouseClicked="#onUserClickAction" prefHeight="150.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(to right, #ec38bc, #fdeff9);" AnchorPane.rightAnchor="20.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="47.0" text="System Users" textFill="WHITE">
+                     <font>
+                        <Font name="Californian FB Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblUsers" layoutX="14.0" layoutY="75.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="186.0" layoutY="89.0" onMouseClicked="#earningsOnClick" size="80" text="" />
+                  <Label layoutX="215.0" layoutY="122.0" text="More Info  ">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="277.0" layoutY="115.0" text="&gt;">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+            <BarChart fx:id="salaryChart" layoutX="215.0" layoutY="385.0" prefHeight="529.0" prefWidth="1224.0" title="Average Salary">
+              <xAxis>
+                <CategoryAxis fx:id="name" label="Designation" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="amount" label="Amount" side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+      <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" graphicTextGap="12.0" layoutY="341.0" onAction="#adOrdersOnAction" prefHeight="60.0" prefWidth="300.0" stylesheets="@../style.css" text="Orders" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="340.0">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assests/icons8-mobile-order-100.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginAP" prefHeight="1050.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.LoginFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0598ff" height="1050.0" opacity="0.9" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="600.0" layoutX="964.0" layoutY="151.0" stroke="BLACK" strokeType="INSIDE" width="513.0" />
+      <JFXTextField fx:id="txtUsername" focusColor="#0598ff" layoutX="1075.0" layoutY="408.0" onKeyPressed="#userNameOnPress" prefHeight="40.0" prefWidth="300.0" promptText="Username" unFocusColor="#0598ff">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" focusColor="#0598ff" layoutX="1080.0" layoutY="497.0" prefHeight="40.0" prefWidth="300.0" promptText="Password" unFocusColor="#0598ff">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXPasswordField>
+      <FontAwesomeIconView fill="#0598ff" glyphName="USER" layoutX="1029.0" layoutY="439.0" size="30" />
+      <FontAwesomeIconView fill="#0598ff" glyphName="LOCK" layoutX="1031.0" layoutY="528.0" size="30" text="" />
+      <JFXButton buttonType="RAISED" layoutX="1080.0" layoutY="631.0" onAction="#loginOnAction" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #0598ff;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="1164.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-user-shield-100.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblWarning" layoutX="1075.0" layoutY="382.0" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: transparent;" textFill="RED">
+         <font>
+            <Font name="Cambria" size="12.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtShowPassword" focusColor="#0598ff" layoutX="1080.0" layoutY="497.0" onKeyPressed="#userNameOnPress" prefHeight="40.0" prefWidth="300.0" unFocusColor="#0598ff" visible="false">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXCheckBox fx:id="cbPassword" checkedColor="#9c102d" layoutX="1080.0" layoutY="547.0" onAction="#showPasswordOnAction" text="Show password">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </JFXCheckBox>
+      <Label layoutX="133.0" layoutY="534.0" text="Restaurant Management System" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="253.0" fitWidth="403.0" layoutX="199.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/Screenshot%20(24).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1040.0" layoutY="57.0" text="WELCOME  BACK">
+         <font>
+            <Font name="Century" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="1152.0" layoutY="294.0" text="User Login" textFill="#0598ff">
+         <font>
+            <Font name="Cambria Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>
